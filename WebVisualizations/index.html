@@ -1,91 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Web Visualization Challenge</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Web Visualization Challenge</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">My Data Visualization Project</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Data Visualization Project</a>
+        <button class="navbar-toggler title" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Plots
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-                      <a class="dropdown-item" href="humidity.html">Humidity</a>
-                      <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                      <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="comparison.html">Comparison</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="data.html">Data</a>
-                </li>
-              </ul>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="navbar_right_side">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-lg-8">
-                    <div class="jumbotron content">
-                        <h1 class="display-4">Summary</h1>
-                        <hr class="my-4">
-                        <img src="visualizations/temperature.scatter.png" alt="Max-Temperature-scatter">
-                        <p>This analysis was performed to extract insights about weather data based on latitude. Data from a 500+ random city set was extracted from the OpenWeather web API performing successive API requests. For every city, the data sets collected included maximum temperature (in °F), wind speed (in mph), humidity (as %) and cloudiness (as %). Except for the Max Temperature data series, none of the data show significant correlation to the latitude. This variable in particular grows bigger as the selected location gets closer to the Equator (i.e. as the latitude approaches zero).</p>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <a><br></a>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                <div class="jumbotron content">
+                    <h1 class="display-4">Summary</h1>
+                    <hr class="my-4">
+                    <p>This analysis was performed to extract insights about weather data based on latitude. Data from a
+                        500+ random city set was extracted from the OpenWeather web API performing successive API
+                        requests. For every city, the data sets collected included maximum temperature (in °F), wind
+                        speed (in mph), humidity (as %) and cloudiness (as %). Except for the Max Temperature data
+                        series, none of the data show significant correlation to the latitude. This variable in
+                        particular grows bigger as the selected location gets closer to the Equator (i.e. as the
+                        latitude approaches zero).</p>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="jumbotron content">
-                        <h1 class="display-4">Visualizations</h1>
-                        <hr class="my-4">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <a href="maxtemp.html">
-                                    <img class="img-options" src="visualizations/temperature.scatter.png" alt="Max-Temperature-scatter">
-                                </a>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <a href="humidity.html">
-                                    <img class="img-options" src="visualizations/humidity.scatter.png" alt="Humidity-scatter">
-                                </a>
-                            </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="jumbotron content">
+                    <h1 class="display-4 subheader-in-box">Visualizations</h1>
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <a href="maxtemp.html">
+                                <img class="img-options" src="visualizations/temperature.scatter.png"
+                                    alt="Max-Temperature-scatter">
+                            </a>
                         </div>
-                        <div class="row">
-                            <br>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <a href="humidity.html">
+                                <img class="img-options" src="visualizations/humidity.scatter.png"
+                                    alt="Humidity-scatter">
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <a href="cloudiness.html">
-                                    <img class="img-options" src="visualizations/cloudiness.scatter.png" alt="Cloudiness-scatter">
-                                </a>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
-                                <a href="windspeed.html">
-                                    <img class="img-options" src="visualizations/windspeed.scatter.png" alt="Windspeed-scatter">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <br>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <a href="cloudiness.html">
+                                <img class="img-options" src="visualizations/cloudiness.scatter.png"
+                                    alt="Cloudiness-scatter">
+                            </a>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <a href="windspeed.html">
+                                <img class="img-options" src="visualizations/windspeed.scatter.png"
+                                    alt="Windspeed-scatter">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
