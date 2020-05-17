@@ -16,14 +16,14 @@ body{
 }
 
 .subheader{
-    font-size: 30px;
+    font-size: 25px;
     align-items: center;
     padding-top: 5%;
     padding-left: 5%;
 }
 
 .subheader-in-box{
-    font-size: 30px;
+    font-size: 25px;
     align-items: center;
 }
 
@@ -35,8 +35,12 @@ body{
 .navbar_right_side{
     position: relative;
     left: 77%;
-    text-align: left;
-    z-index: 5;
+  }
+
+  .dataframe{
+      width: 100%;
+      table-layout: auto;
+      background-color:white;
   }
 
 
