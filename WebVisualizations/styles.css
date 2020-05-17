@@ -1,0 +1,12 @@
+.img-options{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content{
+    background-color: white;
+}
+
+.selected-vis{
+    border: 2px solid turquoise;
+}
