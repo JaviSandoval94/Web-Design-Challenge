@@ -1,6 +1,6 @@
 # Introduction
-![weather-visualization](https://github.com/JaviSandoval94/Web-Design-Challenge/blob/master/WebVisualizations/visualizations/temperature.scatter.png)<br>
-Web interfaces are often great ways to comunicate with data, being ubiquous, visual and interactive means. This projects is my first web data visualization and aims to offer insights related to the weather of a location depending on its latitude and longitude. To show these visualizations (made with Python) a simple website was created using HTML and Bootstrap. The final project is deployed online using GitHub pages [in this link](https://javisandoval94.github.io/Web-Design-Challenge/WebVisualizations/index.html).
+Web interfaces are often great ways to comunicate with data, being ubiquous, visual and interactive means. This projects is my first web data visualization and aims to offer insights related to the weather of a location depending on its latitude and longitude. To show these visualizations (made with Python) a simple website was created using HTML and Bootstrap. The final project is deployed online using GitHub pages [in this link](https://javisandoval94.github.io/Web-Design-Challenge/WebVisualizations/index.html).<br>
+![weather-visualization](https://github.com/JaviSandoval94/Web-Design-Challenge/blob/master/WebVisualizations/visualizations/temperature.scatter.png)
 
 
 # Data set
